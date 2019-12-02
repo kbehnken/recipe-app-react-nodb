@@ -1,5 +1,5 @@
 # recipe-box
-This app will allow users to create, update, read and delete recipes held in memory
+This app will allow users to create, edit, read and delete recipes held in memory
 
 ## front-end checklist
 
@@ -45,7 +45,7 @@ This app will allow users to create, update, read and delete recipes held in mem
 - Get all recipes: GET `/api/recipes`
 - Get a single recipe: GET `/api/recipe/:id`
 - Create a recipe: POST `/api/recipe`
-- Update a recipe: PUT `/api/recipe/:id` {body: name, prepTime, cookTime, ingredients, directions}
+- Edit a recipe: PUT `/api/recipe/:id` {body: name, prepTime, cookTime, ingredients, directions}
 
 #### example usage
 ```js
@@ -64,6 +64,6 @@ const recipe = {
     prepTime: String,
     cookTime: String,
     ingredients: Array,
-    directions: Array
+    directions: String
 }
 ```

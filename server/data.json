@@ -1,0 +1,24 @@
+[{
+    "id": 1,
+    "name": "Cream Corn",
+    "prepTime": "5 minutes",
+    "cookTime": "10 minutes",
+    "ingredients": ["2 (10 ounce) packages frozen corn kernels, thawed", "1 cup heavy cream", "1 teaspoon salt", "2 tablespoons granulated sugar", "1/4 teaspoon freshly ground black pepper", "2 tablespoons butter", "1 cup whole milk", "2 tablespoons all-purpose flour", "1/4 cup freshly grated Parmesan cheese"],
+    "directions": "Combine the corn, cream, salt, sugar, pepper and butter in a skillet. Whisk together the milk and flour, then stir into the corn mixture. Stir over medium heat until the mixture is thickened and corn is cooked through. Remove from heat, and stir in Parmesan cheese until melted."
+},
+{
+    "id": 2,
+    "name": "Cereal",
+    "prepTime": "2 minutes",
+    "cookTime": "0 minutes",
+    "ingredients": ["cereal,", " milk"],
+    "directions": "Combine milk and cereal in a bowl and serve."
+},
+{
+    "id": 3,
+    "name": "Turkey",
+    "prepTime": "30 minutes",
+    "cookTime": "3 hours",
+    "ingredients": ["2 (10 ounce) packages frozen corn kernels, thawed", "1 cup heavy cream", "1 teaspoon salt", "2 tablespoons granulated sugar", "1/4 teaspoon freshly ground black pepper", "2 tablespoons butter", "1 cup whole milk", "2 tablespoons all-purpose flour", "1/4 cup freshly grated Parmesan cheese"],
+    "directions": "Season and bake in oven at 350 degrees."
+}]
