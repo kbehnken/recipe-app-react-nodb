@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import Read from './Read';
 import Edit from './Edit';
+import Read from './Read';
 
 export default class RecipeCard extends Component {
     constructor(props) {
@@ -39,11 +39,11 @@ export default class RecipeCard extends Component {
                 {
                     editing
                     ?
-                    <Edit recipe={recipe} changeHandler={this.changeHandler} saveChangesFn={this.saveChanges} setEditingFn={() => {
+                    <Edit recipe={recipe} changeHandler={this.changeHandler} saveChangesFn={this.saveChanges} setActionFn={() => {
                         this.setEditing(false)
                     }} />
                     :
-                    <Read recipe={recipe} discardRecipeFn={this.props.discardRecipeFn} setEditingFn={() => {
+                    <Read recipe={recipe} discardRecipeFn={this.props.discardRecipeFn} setActionFn={() => {
                         this.setEditing(true)
                     }} />
                 }

@@ -20,11 +20,11 @@ export default class Add extends Component {
         })
     }
     saveChanges() {
-        this.props.addRecipeFn(this.state.recipe.id, this.state.recipe)
-        this.props.setAddingFn(false)
+        this.props.addRecipeFn(this.state.recipe)
+        this.props.setActionFn(false)
     }
 
     render() {
-        return <Edit recipe={this.state.recipe} changeHandler={this.changeHandler} saveChangesFn={this.saveChanges} setEditingFn={this.props.setAddingFn} />
+        return <Edit recipe={this.state.recipe} changeHandler={this.changeHandler} saveChangesFn={this.saveChanges} setActionFn={this.props.setActionFn} />
     }
 }

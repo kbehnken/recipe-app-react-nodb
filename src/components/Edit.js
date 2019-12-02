@@ -5,9 +5,14 @@ import Button from './Button'
 export default function Edit(props) {
     
     const {prepTime, cookTime, name, ingredients, directions} = props.recipe;
-    const {setEditingFn, saveChangesFn, changeHandler} = props;
+    const {setActionFn, saveChangesFn, changeHandler} = props;
     return (
         <div>
+            <header>
+                <div className="header-div">
+                    
+                </div>
+            </header>
             <div>
                 <label>
                     Name: 
@@ -45,29 +50,11 @@ export default function Edit(props) {
                     <textarea onChange={event => changeHandler("directions", event.target.value)} value={directions} />
                 </div>
                 <div>
-                    <Button action={setEditingFn} label="Cancel" />
+                    <Button action={() => {
+                        setActionFn(false)
+                    }} label="Cancel" />
                     <Button action={saveChangesFn} label="Save" />
                 </div>
         </div>
     )  
-    
-    // const {prepTime, cookTime, name, ingredients, directions} = props;
-    // return (
-    //     <form onSubmit={event => {
-    //         event.preventDefault();
-    //         props.addRecipe();
-    //     }}>
-    //         <label>Prep Time:</label> {" "}
-    //         <input type="text" onChange={event => props.changeHandler(event.target.prepTime, event.target.value)} value={prepTime}  />
-    //         <label>Cook Time:</label> {" "}
-    //         <input type="text" onChange={event => props.changeHandler(event.target.cookTime, event.target.value)} value={cookTime}  />
-    //         <label>Name:</label> {" "}
-    //         <input type="text" onChange={event => props.changeHandler(event.target.name, event.target.value)} value={name}  />
-    //         <label>Ingredients:</label> {" "}
-    //         <input type="text" onChange={event => props.changeHandler(event.target.ingredients, event.target.value)} value={ingredients}  />
-    //         <label>Directions:</label> {" "}
-    //         <input type="text" onChange={event => props.changeHandler(event.target.directions, event.target.value)} value={directions}  />
-    //         <Button />
-    //     </form>
-    // )
 }

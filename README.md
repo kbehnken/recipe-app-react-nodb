@@ -14,13 +14,17 @@ This app will allow users to create, edit, read and delete recipes held in memor
   - App.js => class
   - index.js
   - App.css
+  - main.css
   - index.css => reset.css
   - setupProxy.js
   - components/
-    - Header
+    - Header.js
     - RecipeCard.js
-    - RecipeList.js
     - RecipeForm.js
+    - Read.js
+    - Edit.js
+    - Add.js
+    - Button.js
   
   ### dependencies
 

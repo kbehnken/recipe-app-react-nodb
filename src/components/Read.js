@@ -3,16 +3,22 @@ import { MdEdit, MdDelete } from "react-icons/md";
 
 export default function Read(props) {
     
-    const {setEditingFn, discardRecipeFn, id} = props;
+    const {setActionFn, discardRecipeFn, id} = props;
     return (
-        <div>
+        <div style={{"marginBottom": "25px"}}>
+            <div className="header-container">
             <header>
-                <div className="recipe-name">
-                    {props.recipe.name}
+                <div className="header-div">
+                    <div>
+                        {props.recipe.name}
+                    </div>
+                    <div>
+                        <MdEdit className="react-icons" size={20} onClick={setActionFn} />
+                        <MdDelete className="react-icons" size={20} onClick={() => discardRecipeFn(id)}/>
+                    </div>
                 </div>
-                <div><MdEdit className="react-icons" size={20} onClick={setEditingFn} /><MdDelete className="react-icons" size={20} onClick={() => discardRecipeFn(id)}/>
-        </div>
             </header>
+            </div>
             <main>
                 <div className="time-container">
                     <div className="time">

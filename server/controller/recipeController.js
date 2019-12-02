@@ -1,5 +1,4 @@
 const recipes = require("../data.json");
-let id = 4;
 
 module.exports = {
     getRecipes: (req, res, next) => {
@@ -20,6 +19,7 @@ module.exports = {
     },
     addRecipe: (req, res, next) => {
         const {name, prepTime, cookTime, ingredients, directions} = req.body;
+        const id = recipes.length + 1
         const newRecipe = {
             id,
             name,
@@ -29,7 +29,6 @@ module.exports = {
             directions
         };
         recipes.push(newRecipe);
-        id++;
         res.status(200).send(recipes);
     },
     editRecipe: (req, res, next) => {

@@ -4,18 +4,17 @@ body {
     font-size: 12pt;
 };
 
-header {
-    height: 80px;
-    width: 100vw; 
-
+.header-container {
     display: flex;
 }
 
-header > div {
+.header-div {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     background-color: #b4a7d6;
+    font-size: 18pt;
+    font-weight: 700;
 }
 
 h1 {
@@ -26,7 +25,8 @@ h1 {
 .filter-input {
     height: 25px;
     width: 150px;
-    background-color: #d9d9d9
+    background-color: #d9d9d9;
+    margin-right: 25px;
 }
 
 .main-container {
@@ -36,17 +36,15 @@ h1 {
     padding: 50px;
 }
 
-.recipe-name {
-    font-size: 18pt;
-    font-weight: 700;
+.add-recipe, label {
+    font-weight: 600;
 }
 
-.add-recipe {
+.add-recipe, .react-icons, button {
     cursor: pointer;
 }
 
 label {
-    font-weight: 600;
     line-height: 32pt;
     padding-right: 10px;
 }
@@ -61,14 +59,16 @@ label {
 }
 
 .react-icons {
-    cursor: pointer;
     padding-left: 5px;
 }
 
 button {
+    height: 50px;
+    width: 100px;
     background-color: #b4a7d6;
     margin: 10px;
     text-align: center;
+    font-weight: 600;
 }
 
 textarea {
