@@ -10,7 +10,7 @@ export default function Edit(props) {
         <div>
             <header>
                 <div className="header-div">
-                    
+                   
                 </div>
             </header>
             <div>
@@ -33,28 +33,28 @@ export default function Edit(props) {
                     <input type="text" onChange={event => props.changeHandler("cookTime", event.target.value)} value={cookTime} />
                 </div>
             </div>
-                <div>
-                    <label>
-                        Ingredients: 
-                    </label>
-                </div>
-                <div>
-                    <textarea onChange={event => props.changeHandler("ingredients", event.target.value)} value={ingredients} />
-                </div>
-                <div>
-                    <label>
-                        Directions:
-                    </label>
-                </div>
-                <div>
-                    <textarea onChange={event => changeHandler("directions", event.target.value)} value={directions} />
-                </div>
-                <div>
-                    <Button action={() => {
-                        setActionFn(false)
-                    }} label="Cancel" />
-                    <Button action={saveChangesFn} label="Save" />
-                </div>
+            <div>
+                <label>
+                    Ingredients: 
+                </label>
+            </div>
+            <div>
+                <textarea onChange={event => props.changeHandler("ingredients", event.target.value)} value={ingredients} />
+            </div>
+            <div>
+                <label>
+                    Directions:
+                </label>
+            </div>
+            <div>
+                <textarea onChange={event => changeHandler("directions", event.target.value)} value={directions} />
+            </div>
+            <div>
+                <Button action={() => {
+                    setActionFn(false)
+                }} label="Cancel" />
+                <Button action={saveChangesFn} label="Save" />
+            </div>
         </div>
     )  
 }
