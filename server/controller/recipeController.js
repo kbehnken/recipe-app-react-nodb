@@ -38,6 +38,7 @@ module.exports = {
             return recipe.id === +id;
         });
         if (index !== -1) {
+            // null collation
             recipes[index].prepTime = prepTime || recipes[index].prepTime;
             recipes[index].cookTime = cookTime || recipes[index].cookTime;
             recipes[index].name = name || recipes[index].name;
